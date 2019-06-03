@@ -1,6 +1,10 @@
 class Patient
   
+<<<<<<< HEAD
   attr_accessor :name, :doctor
+=======
+  attr_accessor :name
+>>>>>>> 5337044c937cc1878af00baca6c622a677a51162
   
   @@all = []
   
@@ -17,6 +21,7 @@ class Patient
     appt = Appointment.new(date, self, doctor)
   end
   
+<<<<<<< HEAD
   def appointments 
     Appointment.all.select do |e|
       e.patient == self
@@ -30,4 +35,6 @@ class Patient
   end
 
   
+=======
+>>>>>>> 5337044c937cc1878af00baca6c622a677a51162
 end

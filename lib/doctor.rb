@@ -17,7 +17,12 @@ class Doctor
     @@all
   end
   
+<<<<<<< HEAD
   def new_appointment(patient, date) 
+=======
+  def new_appointment(date, patient) 
+    patient = Patient.new(patient)
+>>>>>>> 5337044c937cc1878af00baca6c622a677a51162
     appt = Appointment.new(date, patient, self)
   end
   
@@ -29,7 +34,11 @@ class Doctor
   
   def patients 
     appointments.collect do |e|
+<<<<<<< HEAD
       e.patient
+=======
+      puts e
+>>>>>>> 5337044c937cc1878af00baca6c622a677a51162
     end
   end
 
